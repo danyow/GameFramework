@@ -21,9 +21,11 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\GameFramework.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -96,6 +98,13 @@
     <Compile Include="DataTable\IDataTable.cs" />
     <Compile Include="DataTable\IDataTableHelper.cs" />
     <Compile Include="DataTable\IDataTableManager.cs" />
+    <Compile Include="Data\Constant.cs" />
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="Data\DataInfo.cs" />
+    <Compile Include="Data\DataManager.cs" />
+    <Compile Include="Data\DataManager.DataStatus.cs" />
+    <Compile Include="Data\IData.cs" />
+    <Compile Include="Data\IDataManager.cs" />
     <Compile Include="Debugger\DebuggerManager.cs" />
     <Compile Include="Debugger\DebuggerManager.DebuggerWindowGroup.cs" />
     <Compile Include="Debugger\IDebuggerManager.cs" />
@@ -155,6 +164,22 @@
     <Compile Include="Fsm\FsmState.cs" />
     <Compile Include="Fsm\IFsm.cs" />
     <Compile Include="Fsm\IFsmManager.cs" />
+    <Compile Include="Item\HideItemCompleteEventArgs.cs" />
+    <Compile Include="Item\IItem.cs" />
+    <Compile Include="Item\IItemGroup.cs" />
+    <Compile Include="Item\IItemGroupHelper.cs" />
+    <Compile Include="Item\IItemHelper.cs" />
+    <Compile Include="Item\IItemManager.cs" />
+    <Compile Include="Item\ItemManager.cs" />
+    <Compile Include="Item\ItemManager.ItemGroup.cs" />
+    <Compile Include="Item\ItemManager.ItemInfo.cs" />
+    <Compile Include="Item\ItemManager.ItemInstanceObject.cs" />
+    <Compile Include="Item\ItemManager.ItemStatus.cs" />
+    <Compile Include="Item\ItemManager.ShowitemInfo.cs" />
+    <Compile Include="Item\ShowItemDependencyAssetEventArgs.cs" />
+    <Compile Include="Item\ShowItemFailureEventArgs.cs" />
+    <Compile Include="Item\ShowItemSuccessEventArgs.cs" />
+    <Compile Include="Item\ShowItemUpdateEventArgs.cs" />
     <Compile Include="Localization\ILocalizationHelper.cs" />
     <Compile Include="Localization\ILocalizationManager.cs" />
     <Compile Include="Localization\Language.cs" />
@@ -329,6 +354,11 @@
     <Compile Include="Sound\SoundManager.PlaySoundInfo.cs" />
     <Compile Include="Sound\SoundManager.SoundAgent.cs" />
     <Compile Include="Sound\SoundManager.SoundGroup.cs" />
+    <Compile Include="Task\ConditionalTask.cs" />
+    <Compile Include="Task\ITaskManager.cs" />
+    <Compile Include="Task\TaskBase.cs" />
+    <Compile Include="Task\TaskManager.cs" />
+    <Compile Include="Task\TaskStatus.cs" />
     <Compile Include="UI\CloseUIFormCompleteEventArgs.cs" />
     <Compile Include="UI\IUIForm.cs" />
     <Compile Include="UI\IUIFormHelper.cs" />
