@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace GameFramework.Item
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IItemManager
     {
 

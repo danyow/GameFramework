@@ -2,6 +2,9 @@
 
 namespace GameFramework.Item
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IItemGroup
     {
         /// <summary>
